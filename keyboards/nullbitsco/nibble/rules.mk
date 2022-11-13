@@ -26,7 +26,7 @@ OLED_DRIVER_ENABLE = yes    # Enable OLED display
 
 # Project specific files
 SRC += matrix.c \
-       bitc_led.c \
+       common/bitc_led.c \
        big_led.c \
-       remote_kb.c
+       common/remote_kb.c
 QUANTUM_LIB_SRC += uart.c
