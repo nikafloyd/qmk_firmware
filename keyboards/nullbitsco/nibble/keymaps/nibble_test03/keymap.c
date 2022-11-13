@@ -146,8 +146,8 @@ void matrix_scan_user(void) {
   matrix_scan_remote_kb();
 }
 
-#ifdef OLED_DRIVER_ENABLE
-void oled_task_user(void) {
+#ifdef OLED_ENABLE
+bool oled_task_user(void) {
     // Host Keyboard Layer Status
     oled_write_P(PSTR("Layer: "), false);
 
@@ -184,7 +184,7 @@ void oled_task_user(void) {
 
     //     oled_write_P(qmk_logo, false);
     // }
-
+    return false;
 }
 
 #endif
