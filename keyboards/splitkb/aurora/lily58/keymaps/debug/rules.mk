@@ -14,7 +14,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # NOTE: These are already enabled by default at the revision level
-#ENCODER_ENABLE = yes
+ENCODER_ENABLE = yes
 OLED_ENABLE = no
 
 # RGB Matrix is enabled at the revision level,
