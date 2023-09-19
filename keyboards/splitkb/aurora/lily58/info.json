@@ -10,6 +10,12 @@
     "split": {
         "enabled": true
     },
+    "transport": {
+        "protocol": "i2c"
+    },
+    "usb_detect": {
+        "enabled": true
+    },
     "build": {
         "lto": true
     }
