@@ -18,7 +18,7 @@ LTO_ENABLE = yes            # Link-time optimization
 CUSTOM_MATRIX = lite        # Lite custom matrix
 # OLED_DRIVER_ENABLE = yes    # Enable OLED display (Outdated)
 OLED_ENABLE = yes           # Enable OLED display
-OLED_DRIVER = SSD1306       # Set OLED driver
+OLED_DRIVER = ssd1306       # Set OLED driver
 
 # Project specific files
 SRC += matrix.c \
