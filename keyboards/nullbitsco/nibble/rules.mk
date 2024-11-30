@@ -1,18 +1,24 @@
 # Build Options
 #   change yes to no to disable
 #
-BOOTMAGIC_ENABLE = no       # Enable Bootmagic Lite
-MOUSEKEY_ENABLE = no        # Mouse keys
+BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
+MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
-NKRO_ENABLE = yes           # Enable N-Key Rollover
+SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend
+NKRO_ENABLE = yes           # USB Nkey Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = yes       # Enable keyboard RGB underglow
-AUDIO_ENABLE = no           # Audio output
+MIDI_ENABLE = no            # MIDI support
+BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
+AUDIO_ENABLE = no           # Audio output on port C6
 ENCODER_ENABLE = yes        # Use rotary encoder
 LTO_ENABLE = yes            # Link-time optimization
 CUSTOM_MATRIX = lite        # Lite custom matrix
+# OLED_DRIVER_ENABLE = yes    # Enable OLED display (Outdated)
+OLED_ENABLE = yes           # Enable OLED display
+OLED_DRIVER = ssd1306       # Set OLED driver
 
 # Project specific files
 SRC += matrix.c \
